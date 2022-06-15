@@ -1,0 +1,7 @@
+.pokedex-background{
+    background: rgb(55,53,53);
+background: linear-gradient(90deg, rgba(55,53,53,1) 0%, rgba(85,148,255,1) 63%, rgba(37,36,36,1) 100%);
+}
+.card-href{
+    text-decoration: none;
+}
