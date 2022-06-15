@@ -36,20 +36,17 @@ function getPokemonData(ID){
         })
 }
     function createCardPokemon(pokemon){
-      
         let pokemonName = capitalize(pokemon.data.name)
         let dataCard = `<div class="col-2 mb-4">
-                            <div class="card shadow">
-                                <a href="#" class="card-href" data-bs-toggle="modal" data-bs-target="#pokemonModal" onclick="getPokemonInfo(${pokemon.data.id})">
-                                    <div class="card-body">
-                                        <img class="d-block mx-auto" src="${pokemon.data.sprites.front_default}" style="width:100px">
-                                        <h4 class="text-primary text-center">${pokemonName}</h4>
-                                        <h5 class="text-primary text-center">#${pokemon.data.id.toString().padStart(3,0)}</h5>
-                                        <h6 class="text-primary text-center">Tipo: ${pokemon.data.types[0].type.name}</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>`
+        <div class="card shadow">
+                        <img src="./img/bck.png" class="card-header border-0">
+                        <div class="card-body">
+                            <img src="${pokemon.data.sprites.front_default}" alt="Pokemon" class="card-body-img mx-auto d-block">
+                            <h4 class="card-body-title text-center">${pokemonName}</h4>
+                            <h5 class="text-primary text-center">#${pokemon.data.id.toString().padStart(3,0)}</h5>
+                            <h6 class="text-primary text-center">Tipo: ${pokemon.data.types[0].type.name}</h6>
+                          </div>
+                    </div></div>`
         container.innerHTML += dataCard
     }
     function getPokemons(start,finish){
@@ -121,3 +118,6 @@ function progressBars(stats) {
     }
     return statsContainer;
   }
+
+
+  

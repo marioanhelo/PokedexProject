@@ -5,3 +5,20 @@ background: linear-gradient(90deg, rgba(55,53,53,1) 0%, rgba(85,148,255,1) 63%, 
 .card-href{
     text-decoration: none;
 }
+.card-header {
+    width: 100%;
+    display: block;
+    ;
+}
+.card-body-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: calc(-100px - 5px);
+    background-color: white;
+}
+
+.card-body-title {
+    font-size: 1rem;
+}
