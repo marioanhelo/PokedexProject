@@ -34,7 +34,7 @@ function getPokemonData(ID){
     function createCardPokemon(pokemon){
         let pokemonName = capitalize(pokemon.data.name)
         let dataCard = `<div class="col-2 mb-4">
-                        <div class="card shadow ${pokemon.data.types[0].type.name}">
+                        <div class="card effect shadow ${pokemon.data.types[0].type.name}">
                         <a href="#" class="card-href" data-bs-toggle="modal" data-bs-target="#pokemonModal" onclick="getPokemonInfo(${pokemon.data.id})">
                         <div class="card-body">
                             <img src="${pokemon.data.sprites.front_default}" alt="Pokemon" class="card-body-img mx-auto d-block">
