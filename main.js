@@ -68,9 +68,7 @@ function getPokemonInfo(ID){
       })
         .then(function(response) {
           if(response.status==200) {
-            console.log(response)
             let pokemonName = capitalize(response.data.name)
-            console.log(response)
             let nombre = `<p>${pokemonName}</p>`
             cardHeader.innerHTML = nombre;
             let fotoPokemon = `<div class="${response.data.types[0].type.name} pt-3"><img src="${response.data.sprites.front_default}" class="d-block mx-auto img-modal">
