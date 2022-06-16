@@ -15,10 +15,75 @@ background: linear-gradient(90deg, rgba(55,53,53,1) 0%, rgba(85,148,255,1) 63%, 
     height: 150px;
     border: 5px solid white;
     border-radius: 50%;
-    margin-top: calc(-100px - 5px);
     background-color: white;
+}
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card-body-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color:#FFFFFF
+}
+.normal {
+    background-color: #a8a878;
+  }
+.grass {
+    background-color: #78c850;
+  }
+.ground {
+    background-color: #e0c068;
+  }
+.fighting {
+    background-color: #c03028;
+  }
+.rock {
+    background-color: #61605f;
+  }
+.steel {
+    background-color: #b8b8d0;
+  }
+.fire {
+    background-color: #f08030;
+  }
+.electric {
+    background-color: #f8d030;
+  }
+ .flying {
+    background-color: #a890f0;
+  }
+.psychic {
+    background-color: #f85888;
+  }
+.bug {
+    background-color: #a8b820;
+  }
+.dragon {
+    background-color: #7038f8;
+  }
+.water {
+    background-color: #6890f0;
+  }
+.ice {
+    background-color: #98d8d8;
+  }
+.poison {
+    background-color: #a040a0;
+  }
+.dark {
+    background-color: #705848;
+  }
+.ghost {
+    background-color: #705898;
+  }
+.fairy {
+    background-color: #ffaec9;
+  }
+
+  .img-modal {
+    width: 120px;
+    height: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: white;
 }
