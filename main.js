@@ -46,9 +46,11 @@ function getPokemonData(ID){
         container.innerHTML += dataCard
     }
     function getPokemons(start,finish){
-        for (let i = start; i < start + finish; i++) {
+      loader.style.display ="block"
+      for (let i = start; i < start + finish; i++) {
             getPokemonData(i);
           }
+      loader.style.display ="none"
     }
     getPokemons(1,150)
     function capitalize(string){
